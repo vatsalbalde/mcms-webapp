@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcms-webapp
+  labels:
+    app: mcms-webapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mcms-webapp
+  template:
+    metadata:
+      labels:
+        app: mcms-webapp
+    spec:
+      containers:
+      - name: mcms-webapp
+        image: 10.95.8.137:1111/repository/mcms-hub/webapp
+        imagePullPolicy: IfNotPresent

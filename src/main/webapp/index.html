@@ -1,0 +1,77 @@
+<html>
+
+<head>
+	<title>MCMS DevsecOps Login</title>
+<style> 
+
+
+	    
+  form {  
+  border-color: blue;  
+  border-width: .15em;  
+  border-style: double;
+  color: black;
+  width: 80%;
+  }
+
+
+
+</style>
+
+</head>
+
+<body> 
+<!-- This is body section, write code here which you want to display on web-page --> 
+<br><br><br><br><br><br>
+<section style= "float: left; margin: 0 30%; background-color:lightblue; font-size: 1.175em; width: 40%; border: 1px solid black;">
+
+<center>
+<font color="brown">
+	<h2> MCMS DevSecOps Login</h2>
+</font>
+<hr> 
+<font color="blue">
+	<h3>Please Provide the Following Info</h3>
+</font>
+
+
+<form action="index.jsp">
+
+	Username: <input type="text" name="userName"/>
+	
+	<br/><br/>
+	
+	Password: <input type="password" name="passName"/>
+	
+	<br/><br/>
+
+	Country: <select name="country">
+		<option>Brazil</option>
+		<option>France</option>
+		<option>Germany</option>
+		<option>India</option>
+		<option>Turkey</option>
+		<option>United Kingdom</option>
+		<option>United States of America</option>	
+	</select>
+	<br/><br/>
+	Favourite Programming Language: <br/>
+		<input type="checkbox" name="favoriteLanguage" value="Java"> Java
+		<input type="checkbox" name="favoriteLanguage" value="Go-Lang"> Go-Lang
+		<input type="checkbox" name="favoriteLanguage" value="Python"> Python
+		<input type="checkbox" name="favoriteLanguage" value="Groovy"> Groovy
+
+	<br/><br/>
+	Are you interested in DevSecOps: <br/>
+		<input type="radio" name="interestDevsecops" value="Yes"> Yes
+		<input type="radio" name="interestDevsecops" value="No"> No
+
+
+	<br/><br/>
+
+	<input type="submit" value="Submit" />
+	
+</form>
+</center>
+</body>
+</html>

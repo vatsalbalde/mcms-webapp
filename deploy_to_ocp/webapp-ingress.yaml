@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: webapp-ingress
+spec:
+  host: mcms-webapp.apps.iscpconfig.iscpocp.lab
+  #path: /mcms-webapp
+  #port:
+  #  targetPort: web 
+  to:
+    kind: Service
+    name: mcms-webapp-svc
+  wildcardPolicy: None
